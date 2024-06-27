@@ -1,0 +1,17 @@
+{
+    "appbar.home.title": "Top Posts",
+    "appbar.feed.title": "My Posts",
+    "app.bar.post":"posts",
+    "app.bar.button.post": "Write a post",
+    "app.leftsidebar.home": "Home",
+    "app.leftsidebar.public": "PUBLIC",
+    "app.leftsidebar.comment": "Comments",
+    "app.leftsidebar.share": "Share",
+    "app.leftsidebar.feed": "Feed",
+    "app.leftsidebar.tag": "Tags",
+    "app.leftsidebar.users": "Users",
+    "app.leftsidebar.ngos": "Ngs",
+    "app.leftsidebar.dashboard":"Dashboard",
+    "app.rightsidebar.topngos":"Top NGO's",
+    "app.rightsidebar.toptags":"Top Tags"
+}

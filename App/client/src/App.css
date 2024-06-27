@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(6, 1fr) repeat(3, 1fr);
+    background-color: #E2E8F0;
+    /*grid-gap: 10px; !* Adjust as needed *!*/
+}
+
+
+
+.left-column,
+.right-column {
+    padding: 0px 20px 20px 20px;
+    
+}
+
+.left-column {
+    padding: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: end;
+    grid-column: span 3;
+}
+
+.main-column {
+    padding: 0px;
+    grid-column: span 6;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    grid-column: span 3;
+}
+
+.home-container-1{
+    min-height: 100vh;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:0% auto;
+
+}
+
+.home-container-2{
+    max-width: 1100px;
+    width: calc(100% - 164px);
+    padding: 24px;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;      /* Enables Flexbox */
+    flex-direction: row; /* Aligns children horizontally */
+    height: 100vh;      /* Makes the container fill the entire screen height */
+    margin: 0;          /* Removes default margin */
+    padding: 0;         /* Removes default padding */
+    width: 100vw;       /* Ensure the container fills the viewport width */
+  }
+
+  .box {
+    display: flex;      /* Enables Flexbox for centering content inside each box */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border: 1px solid black; /* Adds a border for visibility */
+  }
+
+  #box1 {
+    width: 30%;         /* Sets width of the first box to 30% of the container */
+  }
+
+  #box2 {
+    width: 40%;         /* Sets width of the second box to 40% of the container */
+  }
+
+  #box3 {
+    width: 30%;         /* Sets width of the third box to 30% of the container */
+  }
+
+  .home-container-1 .chatbot-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 15px -5px #ccc;
+    border: 1px solid #ddd;
+  }
+  .home-container-1 .chatbot-button .comment-button {
+    font-size: 1.3em;
+  }
+
+
+
+@media screen and (max-width:760px) {
+  .home-container-2{
+      max-width: 100%;
+      width: 100%;
+  }
+}

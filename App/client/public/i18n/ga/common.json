@@ -1,0 +1,19 @@
+
+    {
+        "appbar.home.title": "Top-Beiträge",
+        "appbar.feed.title": "Alle Beiträge",
+        "app.bar.post": "Beiträge",
+        "app.bar.button.post": "Einen schreiben",
+        "app.leftsidebar.home": "Startseite",
+        "app.leftsidebar.public": "ÖFFENTLICH",
+        "app.leftsidebar.comment": "Kommentare",
+        "app.leftsidebar.share": "Teilen",
+        "app.leftsidebar.feed": "Füttern",
+        "app.leftsidebar.tag": "Stichworte",
+        "app.leftsidebar.users": "Benutzer",
+        "app.leftsidebar.ngos": "NGOs",
+        "app.leftsidebar.dashboard": "Übersicht",
+        "app.rightsidebar.topngos": "Spitze NGOs",
+        "app.rightsidebar.toptags": "Spitze Stichworte"
+    }
+    

@@ -1,0 +1,9 @@
+.home-container-1{
+    .home-container-2{
+        .total-container{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+    }
+}

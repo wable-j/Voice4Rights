@@ -1,0 +1,21 @@
+meta {
+  name: Creating donation
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/donation/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "ngoId": "01",
+    "userId": "1",
+    "amount": "100$",
+    "isAnonymous": false,
+    "paymentMethod": "card"
+  }
+}

@@ -1,0 +1,21 @@
+
+.dashboard-component {
+    max-width: fit-content !important;
+    width: fit-content !important;
+    padding: 5px;
+
+    .total {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  
+    .count {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  

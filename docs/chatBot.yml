@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  title: Chatbot Navigation API
+  description: This API allows interaction with the Voice4Rights chatbot, which assists users in navigating the site.
+  version: 1.0.0
+servers:
+  - url: https://api.voice4rights.org/v1
+paths:
+  /chatbot/initiate:
+    get:
+      summary: Start a chatbot session
+      description: Initiates a new chatbot session and provides the initial greeting and options.
+      responses:
+        '200':
+          description: Successfully initiated a chatbot session.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatbotInitiationResponse'
+
+  /chatbot/respond:
+    post:
+      summary: Handle user response
+      description: Processes the user's response and navigates them accordingly.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatbotUserResponse'
+      responses:
+        '200':
+          description: Successfully processed the user's intent.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatbotNavigationResponse'
+        '400':
+          description: Invalid request body
+
+components:
+  schemas:
+    ChatbotInitiationResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Welcome to Voice4Rights! Do you want to donate or report an issue?
+        options:
+          type: array
+          items:
+            type: string
+          example: ["donate", "report"]
+    ChatbotUserResponse:
+      type: object
+      required:
+        - intent
+      properties:
+        intent:
+          type: string
+          description: The user's chosen intent (e.g., donate, report).
+          example: donate
+    ChatbotNavigationResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: You chose to donate. Redirecting you to the donation page.
+        redirectUrl:
+          type: string
+          description: The URL to navigate the user based on their intent.
+          example: https://voice4rights.org/donate
