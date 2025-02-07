@@ -2,10 +2,10 @@
 
   <img src="https://user-images.githubusercontent.com/99184393/196572825-73d2a0dc-f96e-45af-884b-77ed7cf20184.png" alt="logo" width="200" height="auto" />
   
-  <h1>Reddit Clone with REACT.JS</h1>
+  <h1>Voice4Rights with REACT.JS</h1>
   
   <p>
-Reddit Clone with REACTJS (Next.js, Firebase v9, Chakra UI, TypeScript, Recoil, (Image Uploading, Google Authentication, Create Community, Join Community, Leave Community, Upvote and Downvote Posts), Dark Mode & Light Mode, Data Encryption and Decryption)
+Voice4Rights with REACTJS (Next.js, Firebase v9, Chakra UI, TypeScript, Recoil, (Image Uploading, Google Authentication, Create Community, Join Community, Leave Community, Upvote and Downvote Posts), Dark Mode & Light Mode, Data Encryption and Decryption)
   </p>
   
   
